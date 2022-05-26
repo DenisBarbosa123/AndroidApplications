@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/repo/AndroidProject02/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/repo/AndroidProject02/app/src/main/res/layout/fragment_product_detail.xml" value="0.1203125" />
+        <entry key="..\:/repo/AndroidProject02/app/src/main/res/layout/fragment_products_list.xml" value="0.22" />
+        <entry key="..\:/repo/AndroidProject02/app/src/main/res/layout/item_product.xml" value="0.17074275362318841" />
       </map>
     </option>
   </component>

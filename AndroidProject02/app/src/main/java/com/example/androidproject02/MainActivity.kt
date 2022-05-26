@@ -12,6 +12,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Log.i("MainActivity", "OnCreate")
-        val viewModel = ViewModelProvider(this).get(ProductListViewModel::class.java)
     }
 }

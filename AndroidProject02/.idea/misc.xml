@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/repo/AndroidApplications/AndroidProject02/app/src/main/res/layout/fragment_product_detail.xml" value="0.20416666666666666" />
+        <entry key="..\:/repo/AndroidApplications/AndroidProject02/app/src/main/res/layout/item_product.xml" value="0.20416666666666666" />
         <entry key="..\:/repo/AndroidProject02/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/repo/AndroidProject02/app/src/main/res/layout/fragment_product_detail.xml" value="0.1203125" />
         <entry key="..\:/repo/AndroidProject02/app/src/main/res/layout/fragment_products_list.xml" value="0.22" />

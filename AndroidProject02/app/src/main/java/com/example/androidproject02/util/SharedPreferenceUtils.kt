@@ -13,6 +13,7 @@ object SharedPreferenceUtils {
         with (getSharedPreferences().edit()){
             putString(ACCESS_TOKEN, accessToken)
             putInt(EXPIRES_IN, ((System.currentTimeMillis() / 1000) + expiresIn).toInt())
+            commit()
         }
     }
 

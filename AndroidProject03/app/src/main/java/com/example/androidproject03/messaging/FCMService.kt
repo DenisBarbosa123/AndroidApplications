@@ -20,7 +20,7 @@ class FCMService: FirebaseMessagingService() {
     }
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
-        remoteMessage.data.isEmpty().let {
+        remoteMessage.data.isNotEmpty().let {
             Log.d(TAG, "Payload:" + remoteMessage.data)
             remoteMessage.data.get("product")?.let {
                 sendProductNotification(it)
@@ -28,8 +28,7 @@ class FCMService: FirebaseMessagingService() {
         }
     }
 
-    private fun sendProductNotification(productInfo: String)
-    {
+    private fun sendProductNotification(productInfo: String) {
         val intent = Intent(this, MainActivity::class.java)
         intent.putExtra("product", productInfo)
         sendNotification(intent)
@@ -39,7 +38,7 @@ class FCMService: FirebaseMessagingService() {
         val pendingIntent = PendingIntent.getActivity(this,
             0,
             intent,
-            PendingIntent.FLAG_UPDATE_CURRENT)
+            PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT)
         val channelId = "1"
         val notificationBuilder = NotificationCompat
             .Builder(this, channelId)

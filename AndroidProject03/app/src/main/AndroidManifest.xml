@@ -21,12 +21,12 @@
         <service android:name="com.example.androidproject03.messaging.FCMService"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase,MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
-            android:value="1"/>
+            android:value="1" />
     </application>
 
 </manifest>
